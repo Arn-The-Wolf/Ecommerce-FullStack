@@ -1,38 +1,35 @@
-.App {
-  text-align: center;
+*{
+  margin: 0px;
+  padding: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bg-blue{
+  background: #233a95;
 }
-
-.App-link {
-  color: #61dafb;
+.headerWrapper .top-strip{
+  padding: 8px 0px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.headerWrapper .top-strip p{
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+}
+.headerWrapper .header{
+  width: 100%;
+  height: auto;
+  padding: 15px 0px;
+}
+.logoWrapper img{
+  width: 100%;
+}
+.headerWrapper .header .part 2 .countryDrop{
+    width: 150px;
+    height: 80px;
+    min-width: 150px;
 }
