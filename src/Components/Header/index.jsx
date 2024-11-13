@@ -3,6 +3,8 @@ import logo from '../../Assets/images/bacola-logo.png';
 import secure from '../../Assets/images/Screenshot 2024-11-11 114433.png'
 import Button from '@mui/material/Button';
 import { Stack, Typography } from '@mui/material';
+import English from "./English";
+import Currency from "./Currency";
 
 const Header = () => {
     return (
@@ -14,35 +16,35 @@ const Header = () => {
                     </div>
                 </div>
 
-                <div className="navbar">
-                    <Stack direction="row" spacing={4}>
+                <div className="navbar ml-3">
+                    <Stack direction="row" spacing={2} marginRight="50px">
                         <Typography
                             variant="body1"
-                            sx={{ fontFamily: 'Inter, sans-serif', fontSize: '12px', color: '#3E445A' }}
+                            sx={{ fontFamily: 'Inter, sans-serif', fontSize: '12px', color: '#3E445A', marginLeft: '11.5px' }}
                         >
                             About Us
                         </Typography>
                         <Typography
                             variant="body1"
-                            sx={{ fontFamily: 'Inter, sans-serif', fontSize: '12px', color: '#3E445A' }}
+                            sx={{ fontFamily: 'Inter, sans-serif', fontSize: '12px', color: '#3E445A', marginLeft: '11.5px' }}
                         >
                             My Account
                         </Typography>
                         <Typography
                             variant="body1"
-                            sx={{ fontFamily: 'Inter, sans-serif', fontSize: '12px', color: '#3E445A' }}
+                            sx={{ fontFamily: 'Inter, sans-serif', fontSize: '12px', color: '#3E445A', marginLeft: '11.5px' }}
                         >
                             Wishlist
                         </Typography>
                         <Typography
                             variant="body1"
-                            sx={{ fontFamily: 'Inter, sans-serif', fontSize: '12px', color: '#3E445A' }}
+                            sx={{ fontFamily: 'Inter, sans-serif', fontSize: '12px', color: '#3E445A', marginLeft: '11.5px' }}
                         >
                             Order Tracking
                         </Typography>
                     </Stack>
 
-                    <Stack direction="row" spacing={0.5} alignItems="center">
+                    <Stack direction="row" spacing={-1.5} alignItems="center" marginRight="-3px">
                         <Typography
                             variant="body1"
                             sx={{ display: 'flex', alignItems: 'center' }}
@@ -51,12 +53,35 @@ const Header = () => {
                         </Typography>
                         <Typography
                             variant="body1"
-                            sx={{ fontFamily: 'Inter, sans-serif', fontSize: '12px', color: '#3E445A' }}
+                            sx={{ fontFamily: 'Inter, sans-serif', fontSize: '12px', color: '#3E445A'}}
                         >
                             100% Secure delivery without contacting the courier
                         </Typography>
                     </Stack>
-                    <div></div>
+
+                    <Stack direction="row" spacing={0.5} alignItems="center" border="1px solid black" >
+                        <Typography
+                            variant="body1"
+                            sx={{ fontFamily: 'Inter, sans-serif', fontSize: '12px', color: '#3E445A', display: 'flex', alignItems: 'center' }}
+                        >
+                            Need help? Call Us: <a href="help.jsx">0020 500</a>
+                        </Typography>
+                    </Stack>
+
+                    <Stack direction="row" spacing={-1.5} alignItems="center" width="160px" border="1px solid black" marginLeft="250px"padding="0">
+                        <Typography
+                            variant="body1"
+                            sx={{ fontFamily: 'Inter, sans-serif', fontSize: '12px', color: '#3E445A', fontStyle: 'semibold' }}
+                        >
+                            <English />
+                        </Typography>
+                        <Typography
+                            variant="body1"
+                            sx={{ fontFamily: 'Inter, sans-serif', fontSize: '12px', color: '#3E445A', fontStyle: 'semibold' }}
+                        >
+                            <Currency />
+                        </Typography>
+                    </Stack>
                     <div></div>
                 </div>
                 <div className="header">
